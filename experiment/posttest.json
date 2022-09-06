@@ -2,38 +2,132 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question":"The study of LAI is called _____",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Photometry",
+        "b": "Photology",
+        "c": "Phyllometry",
+        "d": "Phyllogy"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Indirect Methods of LAI Estimation are Non Destructive in nature. Say True or False",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "True",
+        "b": "False"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question":"The disadvantage of the direct method of estimating LAI is that it is",
+      "answers": {
+        "a": "Destructive",
+        "b": "Time consuming",
+        "c": "Expensive",
+        "d": "All of the Above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The disadvantage of the indirect method is that in some cases it can ___the value of LAI in very dense canopies",
+      "answers": {
+        "a": "Underestimate",
+        "b": "Overestimate"
+      },
+      "explanations": {
+        "a": "",
+        "b": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The Leaf Area Index is thus an important indicator of",
+      "answers": {
+        "a": "Radiation",
+        "b": "Precipitation interception",
+        "c": "Energy conversion and water balance",
+        "d": "All of the Above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Optimum LAI for Apple ranges from",
+      "answers": {
+        "a": "0 to 5",
+        "b": "1 to 10",
+        "c": "1.5 and 5",
+        "d": "7 to 10"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question":" ____ uses the relationship between biomass and the leaf area to calculate the LAI.",
+      "answers": {
+        "a": "Planimetric method",
+        "b": "Gravimetric method",
+        "c": "Inclined point quadrat Method",
+        "d": "Leaf measurement method"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "LAI of ____ is good for tomatoes",
+      "answers": {
+        "a": "1 to 2",
+        "b": "1 to 3",
+        "c": "3 to 4",
+        "d": "0 to 3"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
     }
   ]
 }

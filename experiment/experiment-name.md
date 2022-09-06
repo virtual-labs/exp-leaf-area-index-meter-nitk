@@ -1,1 +1,1 @@
-## Experiment name
+## Leaf Area Index
