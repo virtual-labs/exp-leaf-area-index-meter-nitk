@@ -47,7 +47,7 @@
         "d": ""
       },
       "correctAnswer": "a",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     },
     {
       "question": "LAI is over 10 (dense conifer forests).",
@@ -64,7 +64,7 @@
         "d": ""
       },
       "correctAnswer": "d",
-      "difficulty": "beginner"
+      "difficulty": "advanced"
     },
     {
       "question": "LAI varies with seasonal changes in plant activity. Say True or False",
@@ -77,7 +77,7 @@
         "b": ""
       },
       "correctAnswer": "a",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     }
   ]
 }
