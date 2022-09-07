@@ -1,0 +1,438 @@
+
+html
+{
+    -moz-user-select     : none;
+    -khtml-user-select   : none;
+    -webkit-user-select  : none;
+    -o-user-select       : none;
+    user-select          : none;
+}
+#simscreen
+{
+	position: relative;
+	left:0px;
+	top:0px;
+	height: 600px; 
+	width:800px;
+	border:solid 1px;
+	background-color:white;
+}
+
+#title{
+	position:relative;
+	left: 0px;
+	top: 0px;
+	height:40px;
+	font-size: 24px;
+	text-align:center;
+	background-color: black;
+	font-family: verdana;
+	color: White;
+	text-transform: uppercase; 
+}
+
+#title h3
+{  
+	padding-top:2px;
+	margin:0px;
+}	
+
+.simsubscreen
+{
+	position:absolute;
+	left:50px;
+	top:50px;
+	height:530px;
+	width:745px;
+}
+
+.incanvas
+{
+	margin:5px 0 0 5px;
+	padding:0;
+	font-family:verdana;
+}
+
+#nextButton
+{
+	position:absolute;
+	left:750px;
+	top:540px;
+	cursor:pointer;
+}
+
+.circlebg
+{
+	border-radius:100%;
+	font-size:25px;
+	color:#fff;
+	text-align:center;
+	background:#000
+}
+
+.steptext
+{
+	display:inline;
+	font-size:14px;
+}
+
+table th, tr, td{
+	border: 1px solid black;
+	padding: 2px;
+	font-family: verdana;
+	border-collapse: collapse;
+}
+
+td{
+	font-family: verdana;
+	font-size: 14px;
+	text-align: center;
+	padding:10px;
+}
+
+#copyright{
+	position: absolute;
+	left:60px;
+	top: 580px;
+	font-size:12px;
+}
+
+
+
+#dialog-div{
+	position: absolute;
+	text-align:justify;
+	padding: 2px;
+	left:400px;
+	top:100px;
+	width:300px;
+	border:solid 1px black;
+	background-color: black;
+	/* filter: alpha(opacity=55); */
+	color:white;
+	visibility:hidden;
+}
+
+#dialog-div p{
+	position: relative;
+	text-indent:20px;
+}
+
+#dialog-div input{
+	position: relative;
+	/* left:200px; */
+	/* width:50px; */
+	padding-top:2px;
+	float : right;
+	width:15%;
+}
+input[type="button"]{
+	cursor:pointer
+}
+
+#question-div{
+	position: absolute;
+	border:ridge 3px lightgrey;
+	background-color: lightgrey;
+	/* filter: alpha(opacity=55); */
+	color:black;
+	padding:10px;
+	visibility:hidden;
+	
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  font-family: verdana;
+	font-size:14px;
+}
+
+.tooltip .tooltiptext {
+	font-family: verdana;
+	font-size:14px;
+  visibility: hidden;
+  width: 500px;
+  background-color: black;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 10px 10px 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 100;
+ /* text-align:center;  */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.setFont{
+	font-family: verdana;
+	font-size: 14px;
+}
+
+.descStyle{
+	padding: 5px;
+	background-color: #07070780;
+	color: white;
+	border-radius: 3px;
+	width: 500px;
+	text-align: center;
+}
+#mySlider {
+	overflow: hidden;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+	left:120px;
+	top:60px;
+	border:5px lightgrey solid;
+	/* border-radius:25px; */
+	border-style:ridge;
+}
+
+#sliderNav {
+	position: relative;
+	left:210px;
+	top:150px;
+	width:250px;
+}
+
+.singleSlide {
+
+	background-size: cover;
+	height: 300px;
+	position: absolute;
+	left: 500px;
+	width: 100%;
+	top: 0px;
+}
+
+.slideOverlay {
+	background-color: rgba(0, 0, 0, 0);
+	padding-left: 0px;
+	padding-top: 0px;
+}
+
+
+#sliderNav:hover { cursor: pointer;}
+
+#sliderPrev {
+	position: relative;
+	float: left;
+	left: -70px;
+	top:50%;
+}
+#sliderNext {
+	position: relative;
+	float: right;
+	right: -155px;
+}
+.slideShow{
+	visibility:visible;
+}
+
+.slideHide{
+		visibility:hidden;
+
+}
+@-webkit-keyframes slideIn {
+    100% { left: 0; }
+}
+
+@keyframes slideIn {
+    100% { left: 0; }
+}
+
+@-webkit-keyframes slideIn1 {
+    100% { opacity:1 ; }
+}
+
+@keyframes slideIn1 {
+    100% { opacity: 1; }
+}
+
+.slideInRight {
+	left: -100%;
+	-webkit-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+}
+
+.slideInLeft {
+	left: 100%;
+	-webkit-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+}
+
+
+@-webkit-keyframes slideOutLeft {
+	100% { left: -100%; }
+}
+
+@keyframes slideOutLeft {
+    100% { left: -100%; }
+}
+
+@-webkit-keyframes slideOutRight {
+    100% { left: 100%; }
+}
+
+@keyframes slideOutRight {
+    100% { left: 100%; }
+}
+
+.slideOutLeft {
+	-webkit-animation: slideOutLeft 1s forwards;
+	animation: slideOutLeft 1s forwards;
+}
+
+
+.slideOutRight {
+	-webkit-animation: slideOutRight 1s forwards;
+	animation: slideOutRight 1s forwards;
+}
+
+@keyframes moveMinimount
+{
+	0% {left:350px; top:350px;}
+	50%{left:350px; top:215px;}
+	80%{left:210px; top:215px;}
+	100%{left:210px; top:219px;}
+}
+@-webkit-keyframes moveMinimount
+{
+	0% {left:350px; top:350px;}
+	50%{left:350px; top:215px;}
+	80%{left:210px; top:215px;}
+	100%{left:210px; top:219px;}
+}
+
+@keyframes moveMinimountLeft
+{
+	0% {left:210px; top:219px;}
+	100%{left:50px; top:219px;}
+}
+@-webkit-keyframes moveMinimountLeft
+{
+	0% {left:210px; top:219px;}
+	100%{left:50px; top:219px;}
+}
+@keyframes moveTripodLeft
+{
+	0% {left:240px; top: 280px;}
+	100%{left:80px; top:280px;}
+}
+@-webkit-keyframes moveTripodLeft
+{
+	0% {left:240px; top: 280px;}
+	100%{left:80px; top:280px;}
+}
+
+@keyframes topViewMove
+{
+	0% {left:80px; top: 200px;opacity: 0.5}
+	50% {opacity: 0.6}
+	100%{left:280px; top:150px;opacity: 1}
+}
+@-webkit-keyframes topViewMove
+{
+	0% {left:80px; top: 200px;opacity: 0.5}
+	50% {opacity: 0.6}
+	100%{left:280px; top:150px;opacity: 1}
+}
+
+@keyframes moveLeverDown
+{
+	0% {transform: rotate(0deg); }
+	100%{transform: rotate(15deg);}
+}
+@-webkit-keyframes moveLeverDown
+{
+	0% {left:326px; top:215px;}
+	100%{left:326px; top:225px;}
+}
+
+@keyframes moveBubbleOne
+{
+	0% {left:408px; top:206px;}
+	100%{left:405px; top:210px;}
+}
+@-webkit-keyframes moveBubbleOne
+{
+	0% {left:408px; top:206px;}
+	100%{left:405px; top:210px;}
+}
+
+@keyframes moveBox
+{
+	0% {left:420px; top:430px;}
+	50%{left:330px; top:258px;}
+	100%{left:333px; top:254px;}
+}
+@-webkit-keyframes moveBox
+{
+	0% {left:420px; top:430px;}
+	50%{left:330px; top:258px;}
+	100%{left:333px; top:254px;}
+}
+
+@keyframes moveBubbleTwo
+{
+	0% {left:580px; top:306px;}
+	100%{left:574px; top:305px;}
+}
+@-webkit-keyframes moveBubbleTwo
+{
+	0% {left:580px; top:306px;}
+	100%{left:574px; top:305px;}
+}
+
+@keyframes capMove
+{
+	0% {left:334px; top:216px;}
+	50% {left:334px; top:216px;}
+	100%{left:334px; top:180px;}
+}
+@-webkit-keyframes capMove
+{
+	0% {left:334px; top:222px;}
+	50% {left:334px; top:222px;}
+	100%{left:334px; top:180px;}
+}
+
+
+@keyframes moveMinimountLeft1
+{
+	0% {left:210px; top:219px;}
+	100%{left:150px; top:219px;}
+}
+@-webkit-keyframes moveMinimountLeft1
+{
+	0% {left:210px; top:219px;}
+	100%{left:150px; top:219px;}
+}
+@keyframes moveTripodLeft1
+{
+	0% {left:240px; top: 280px;}
+	100%{left:180px; top:280px;}
+}
+@-webkit-keyframes moveTripodLeft1
+{
+	0% {left:240px; top: 280px;}
+	100%{left:180px; top:280px;}
+}
+
+@keyframes zoomMove
+{
+	0% {left:150px; top: 192px;}
+	100%{left:389px; top:192px;}
+}
+@-webkit-keyframes zoomMove
+{
+	0% {left:150px; top: 192px;}
+	100%{left:389px; top:192px;}
+}
