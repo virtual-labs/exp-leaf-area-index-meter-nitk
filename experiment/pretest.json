@@ -9,8 +9,8 @@
 
       },
       "explanations": {
-        "a": "",
-        "b": ""
+        "a": "Correct Answer. Leaf Area Index is a dimensionless quantity. ",
+        "b": "Leaf Area Index is a dimensionless quantity."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -24,10 +24,10 @@
         "d": "0 to 7"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "LAI ranges from 0 to 10.",
+        "b": "LAI ranges from 0 to 10.",
+        "c": "LAI ranges from 0 to 10.",
+        "d": "LAI ranges from 0 to 10."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -41,10 +41,10 @@
         "d": "dense conifer forests"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Bare ground has LAI 0.",
+        "b": "Bare ground has LAI 0.",
+        "c": "Bare ground has LAI 0.",
+        "d": "Bare ground has LAI 0."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -58,10 +58,10 @@
         "d": "dense conifer forests"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Dense conifer forests has high LAI",
+        "b": "Dense conifer forests has high LAI",
+        "c": "Dense conifer forests has high LAI",
+        "d": "Correct Answer. Dense conifer forests has high LAI"
       },
       "correctAnswer": "d",
       "difficulty": "advanced"
@@ -73,8 +73,8 @@
         "b": "False"
       },
       "explanations": {
-        "a": "",
-        "b": ""
+        "a": "Correct Answer. LAI varies with seasonal changes in plant activity.",
+        "b": "LAI varies with seasonal changes in plant activity."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
