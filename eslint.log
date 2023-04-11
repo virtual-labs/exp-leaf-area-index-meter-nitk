@@ -1,0 +1,50 @@
+
+/home/runner/work/exp-leaf-area-index-meter-nitk/exp-leaf-area-index-meter-nitk/experiment/simulation/js/lai.js
+    1:5   warning  'screensVal' is assigned a value but never used      no-unused-vars
+    2:5   warning  'tries' is assigned a value but never used           no-unused-vars
+    3:5   warning  'tamplet' is assigned a value but never used         no-unused-vars
+    4:5   warning  'layersCount' is assigned a value but never used     no-unused-vars
+    5:5   warning  'top1' is assigned a value but never used            no-unused-vars
+    5:17  warning  'top2' is assigned a value but never used            no-unused-vars
+    5:29  warning  'top3' is assigned a value but never used            no-unused-vars
+    5:41  warning  'knifeTop' is assigned a value but never used        no-unused-vars
+    5:57  warning  'knifeTop1' is assigned a value but never used       no-unused-vars
+    6:5   warning  'paperHeight' is assigned a value but never used     no-unused-vars
+    7:5   warning  'checkClick' is assigned a value but never used      no-unused-vars
+   18:5   warning  'selectVariable' is assigned a value but never used  no-unused-vars
+   20:5   warning  'setIndex' is assigned a value but never used        no-unused-vars
+   21:5   warning  'sampleArray' is assigned a value but never used     no-unused-vars
+   22:5   warning  'slideFlag' is assigned a value but never used       no-unused-vars
+   22:20  warning  'identified' is assigned a value but never used      no-unused-vars
+   46:6   warning  'simsubscreennum' is not defined                     no-undef
+   47:7   warning  'soilType' is not defined                            no-undef
+   49:12  warning  'soilType' is not defined                            no-undef
+   59:6   warning  'simsubscreennum' is not defined                     no-undef
+   60:55  warning  'soilType' is not defined                            no-undef
+  116:3   warning  'nextFunction' is not defined                        no-undef
+  124:4   warning  'nextFunction' is not defined                        no-undef
+  192:10  warning  'navNext' is defined but never used                  no-unused-vars
+  194:6   warning  'temp' is not defined                                no-undef
+  194:13  warning  'temp' is not defined                                no-undef
+  194:21  warning  'temp' is not defined                                no-undef
+  196:36  warning  'temp' is not defined                                no-undef
+  198:2   warning  'simsubscreennum' is not defined                     no-undef
+  199:35  warning  'simsubscreennum' is not defined                     no-undef
+  226:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  228:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  234:5   warning  'simsubscreennum' is not defined                     no-undef
+  282:10  warning  'simsubscreennum' is not defined                     no-undef
+  325:10  warning  'simsubscreennum' is not defined                     no-undef
+  372:10  warning  'simsubscreennum' is not defined                     no-undef
+  398:10  warning  'simsubscreennum' is not defined                     no-undef
+  455:5   warning  'Leaf56' is assigned a value but never used          no-unused-vars
+  469:5   warning  'Leaf57' is assigned a value but never used          no-unused-vars
+  483:5   warning  'Leaf59' is assigned a value but never used          no-unused-vars
+  498:5   warning  'Leaf50' is assigned a value but never used          no-unused-vars
+  514:5   warning  'Leaf53' is assigned a value but never used          no-unused-vars
+  528:5   warning  'Leaf61' is assigned a value but never used          no-unused-vars
+  575:10  warning  'prevSlide' is defined but never used                no-unused-vars
+  611:10  warning  'nextSlide' is defined but never used                no-unused-vars
+
+✖ 45 problems (0 errors, 45 warnings)
+

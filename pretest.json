@@ -1,0 +1,83 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Leaf Area Index is a dimensionless quantity. Say True or False.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+
+      },
+      "explanations": {
+        "a": "Correct Answer. Leaf Area Index is a dimensionless quantity. ",
+        "b": "Leaf Area Index is a dimensionless quantity."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "LAI ranges from",
+      "answers": {
+        "a": "-1 to 1",
+        "b": "0 to 1",
+        "c": "0 to 10",
+        "d": "0 to 7"
+      },
+      "explanations": {
+        "a": "LAI ranges from 0 to 10.",
+        "b": "LAI ranges from 0 to 10.",
+        "c": "LAI ranges from 0 to 10.",
+        "d": "LAI ranges from 0 to 10."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "LAI is 0 for",
+      "answers": {
+        "a": "Bare ground",
+        "b": "Sparsely dense",
+        "c": "Shrubs",
+        "d": "dense conifer forests"
+      },
+      "explanations": {
+        "a": "Bare ground has LAI 0.",
+        "b": "Bare ground has LAI 0.",
+        "c": "Bare ground has LAI 0.",
+        "d": "Bare ground has LAI 0."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "LAI is over 10 (dense conifer forests).",
+      "answers": {
+        "a": "Bare ground",
+        "b": "Sparsely dense",
+        "c": "Shrubs",
+        "d": "dense conifer forests"
+      },
+      "explanations": {
+        "a": "Dense conifer forests has high LAI",
+        "b": "Dense conifer forests has high LAI",
+        "c": "Dense conifer forests has high LAI",
+        "d": "Correct Answer. Dense conifer forests has high LAI"
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "LAI varies with seasonal changes in plant activity. Say True or False",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Correct Answer. LAI varies with seasonal changes in plant activity.",
+        "b": "LAI varies with seasonal changes in plant activity."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+  ]
+}
