@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question":"The study of LAI is called _____",
+      "question": "The study of LAI is called ________",
       "answers": {
         "a": "Photometry",
         "b": "Photology",
@@ -32,7 +32,7 @@
       "difficulty": "beginner"
     },
     {
-      "question":"The disadvantage of the direct method of estimating LAI is that it is",
+      "question": "The disadvantage of the direct method of estimating LAI is that it is",
       "answers": {
         "a": "Destructive",
         "b": "Time consuming",
@@ -49,7 +49,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The disadvantage of the indirect method is that in some cases it can ___the value of LAI in very dense canopies",
+      "question": "The disadvantage of the indirect method is that in some cases it can ________ the value of LAI in very dense canopies",
       "answers": {
         "a": "Underestimate",
         "b": "Overestimate"
@@ -96,7 +96,7 @@
       "difficulty": "beginner"
     },
     {
-      "question":" ____ uses the relationship between biomass and the leaf area to calculate the LAI.",
+      "question": " ________ uses the relationship between biomass and the leaf area to calculate the LAI.",
       "answers": {
         "a": "Planimetric method",
         "b": "Gravimetric method",
@@ -113,7 +113,7 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "LAI of ____ is good for tomatoes",
+      "question": "LAI of ________ is good for tomatoes",
       "answers": {
         "a": "1 to 2",
         "b": "1 to 3",
