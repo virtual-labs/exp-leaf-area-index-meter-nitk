@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question":"The study of LAI is called _____",
+      "question": "The study of LAI is called ________",
       "answers": {
         "a": "Photometry",
         "b": "Photology",
@@ -10,10 +10,10 @@
         "d": "Phyllogy"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Photometry is the study and measurement of light.",
+        "b": "A branch of physics that deals with light or the study of light and its effects.",
+        "c": "Correct Answer. The study of LAI is called phyllometry.",
+        "d": "The study of LAI is called phyllometry."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -25,14 +25,14 @@
         "b": "False"
       },
       "explanations": {
-        "a": "",
-        "b": ""
+        "a": "Correct Answer. Indirect Methods of LAI Estimation are Non Destructive in nature.",
+        "b": "Indirect Methods of LAI Estimation are Non Destructive in nature. "
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question":"The disadvantage of the direct method of estimating LAI is that it is",
+      "question": "The disadvantage of the direct method of estimating LAI is that it is",
       "answers": {
         "a": "Destructive",
         "b": "Time consuming",
@@ -40,29 +40,29 @@
         "d": "All of the Above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The disadvantage of the direct method of estimating LAI is that it is Destructive, Time consuming and Expensive.",
+        "b": "The disadvantage of the direct method of estimating LAI is that it is Destructive, Time consuming and Expensive.",
+        "c": "The disadvantage of the direct method of estimating LAI is that it is Destructive, Time consuming and Expensive.",
+        "d": "Correct Answer. The disadvantage of the direct method of estimating LAI is that it is Destructive, Time consuming and Expensive."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "The disadvantage of the indirect method is that in some cases it can ___the value of LAI in very dense canopies",
+      "question": "The disadvantage of the indirect method is that in some cases it can ________ the value of LAI in very dense canopies",
       "answers": {
         "a": "Underestimate",
         "b": "Overestimate"
       },
       "explanations": {
-        "a": "",
-        "b": ""
+        "a": "Correct Answer. The disadvantage of the indirect method is that in some cases it can underestimate the value of LAI in very dense canopies.",
+        "b": "The disadvantage of the indirect method is that in some cases it can underestimate the value of LAI in very dense canopies."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "The Leaf Area Index is thus an important indicator of",
+      "question": "The Leaf Area Index is an important indicator of",
       "answers": {
         "a": "Radiation",
         "b": "Precipitation interception",
@@ -70,10 +70,10 @@
         "d": "All of the Above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The Leaf Area Index is an important indicator of Radiation, Precipitation interception, Energy conversion and water balance.",
+        "b": "The Leaf Area Index is an important indicator of Radiation, Precipitation interception, Energy conversion and water balance.",
+        "c": "The Leaf Area Index is an important indicator of Radiation, Precipitation interception, Energy conversion and water balance.",
+        "d": "Correct Answer. The Leaf Area Index is an important indicator of Radiation, Precipitation interception, Energy conversion and water balance."
       },
       "correctAnswer": "d",
       "difficulty": "advanced"
@@ -87,16 +87,16 @@
         "d": "7 to 10"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Optimum LAI for Apple ranges from 1.5 and 5",
+        "b": "Optimum LAI for Apple ranges from 1.5 and 5",
+        "c": "Correct Answer. Optimum LAI for Apple ranges from 1.5 and 5",
+        "d": "Optimum LAI for Apple ranges from 1.5 and 5"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question":" ____ uses the relationship between biomass and the leaf area to calculate the LAI.",
+      "question": " ________ uses the relationship between biomass and the leaf area to calculate the LAI.",
       "answers": {
         "a": "Planimetric method",
         "b": "Gravimetric method",
@@ -104,16 +104,16 @@
         "d": "Leaf measurement method"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Leaf perimeter is measured by a planimeter in Planimetric method, the area of leaves is derived, and their ratio to the ground is calculated.",
+        "b": "Correct Answer. Gravimetric method uses the relationship between biomass and the leaf area to calculate the LAI. Biomass is estimated by finding the dry weight of leaves.",
+        "c": "In Inclined point quadrat Method vegetation canopy is measured by counting the number of contacts made by a needle in a given quadrat.",
+        "d": "In Leaf measurement method each leaf area is manually measured."
       },
       "correctAnswer": "b",
       "difficulty": "intermediate"
     },
     {
-      "question": "LAI of ____ is good for tomatoes",
+      "question": "LAI of ________ is good for tomatoes",
       "answers": {
         "a": "1 to 2",
         "b": "1 to 3",
@@ -121,10 +121,10 @@
         "d": "0 to 3"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "LAI of good for tomatoes is 3 to 4",
+        "b": "LAI of good for tomatoes is 3 to 4",
+        "c": "Correct Answer. LAI of good for tomatoes is 3 to 4",
+        "d": "LAI of good for tomatoes is 3 to 4"
       },
       "correctAnswer": "c",
       "difficulty": "advanced"

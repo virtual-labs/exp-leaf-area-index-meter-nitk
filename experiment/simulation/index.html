@@ -1,167 +1,672 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>SOLVE</title>
-<link rel="stylesheet" href="css/lai.css" />
-<script type="text/javascript" src="js/lai.js"></script>
-<script>
-var simsubscreennum=0;
-var temp=0;
+  <head>
+    <meta charset="UTF-8" />
+    <title>SOLVE</title>
+    <link rel="stylesheet" href="css/lai.css" />
+    <script type="text/javascript" src="js/lai.js"></script>
+    <script>
+      var simsubscreennum = 0;
+      var temp = 0;
+    </script>
+  </head>
 
+  <body style="margin: 0; font-family: verdana">
+    <div id="simscreen">
+      <div id="title"><h3>LAI using leaf area index meter</h3></div>
 
-</script>
-</head>
+      <div class="simsubscreen" id="canvas0">
+        <h4 class="incanvas">Objective:</h4>
+        <p class="incanvas" style="font-size: 14px">
+          To calculate the LAI of the vegetation using leaf area index meter.
+        </p>
+        <br />
+        <h4 class="incanvas">Apparatus used:</h4>
+        <p class="incanvas" style="font-size: 14px">
+          Tripod, smart phone and Mini Mount with 360&deg; camera with 10MP
+          Pictures, Rechargeable Li-ion Battery and wifi connectivity.
+        </p>
+        <img
+          style="position: absolute; left: 50px; top: 250px; cursor: pointer"
+          title=""
+          src="./images/table.png"
+        />
+        <img
+          style="position: absolute; left: 120px; top: 240px; cursor: pointer"
+          title="Minimount"
+          src="./images/mountHand.png"
+        />
+        <img
+          style="position: absolute; left: 310px; top: 280px; cursor: pointer"
+          title="Smart Phone"
+          src="./images/mobile.png"
+        />
+        <img
+          style="position: absolute; left: 400px; top: 200px; cursor: pointer"
+          title="Tripod"
+          src="./images/tripod1.png"
+        />
+        <img
+          style="
+            position: absolute;
+            left: 540px;
+            top: 120px;
+            width: 150px;
+            height: 400px;
+            cursor: pointer;
+          "
+          title=""
+          src="./images/man.png"
+        />
+        <br />&nbsp;<span
+          class="tooltip"
+          style="border-bottom: 1px dotted; color: red; text-align: justify"
+          >Description
+          <span class="tooltiptext">
+            <p>
+              <strong style="color: red">Leaf area index (LAI)</strong>: is a
+              dimensionless quantity that characterizes plant canopies. A leaf
+              area index (LAI) expresses the leaf area per unit ground or trunk
+              surface area of a plant and is commonly used as an indicator of
+              the growth rate of a plant. LAI is a complex variable that relates
+              not only to the size of the canopy, but also to its density, and
+              the angle at which leaves are oriented in relation to one another
+              and to light sources.
+            </p>
+          </span>
+        </span>
+      </div>
 
-<body style="margin:0; font-family:verdana;">
-<div id="simscreen">
-<div id="title"><h3>LEAF AREA INDEX</h3></div>
+      <div class="simsubscreen" id="canvas1" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;1&nbsp;</span>
+        <p class="steptext">
+          &nbsp;Mount the minimount on a monopod, tripod or a handle. To unlock
+          the minimount push the lever down from upward to downward position.
+        </p>
+        <img
+          id="can1-1"
+          style="position: absolute; left: 240px; top: 280px; cursor: pointer"
+          src="images/tripod2.png"
+        />
+        <img
+          id="can1-2"
+          style="position: absolute; left: 350px; top: 350px; cursor: pointer"
+          src="images/mountHand.png"
+        />
+        <img
+          id="can1-2a"
+          style="
+            position: absolute;
+            left: 350px;
+            top: 350px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/mountWithHand.png"
+        />
+        <img
+          id="can1-2b"
+          style="
+            position: absolute;
+            left: 210px;
+            top: 219px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/mountHand.png"
+        />
+        <img
+          id="can1-3"
+          style="position: absolute; cursor: pointer; opacity: 0"
+          alt="Minimount Topview"
+          src="images/topview.png"
+        />
+        <img
+          id="can1-6"
+          style="
+            position: absolute;
+            cursor: pointer;
+            left: 408px;
+            top: 206px;
+            visibility: hidden;
+          "
+          alt="Minimount Topview"
+          src="images/bubble.png"
+        />
+        <img
+          id="can1-7"
+          style="
+            position: absolute;
+            cursor: pointer;
+            left: 265px;
+            top: 110px;
+            visibility: hidden;
+          "
+          alt="Minimount Topview"
+          src="images/zoom.png"
+        />
+        <img
+          id="can1-4"
+          style="
+            position: absolute;
+            cursor: pointer;
+            left: 330px;
+            top: 275px;
+            opacity: 0;
+            transform: rotate(-60deg);
+            transform-origin: 20% 50%;
+          "
+          alt="Minimount Topview"
+          src="images/lever2.png"
+        />
+        <img
+          id="can1-5"
+          style="
+            position: absolute;
+            cursor: pointer;
+            left: 330px;
+            top: 208px;
+            visibility: hidden;
+          "
+          alt="Minimount Topview"
+          src="images/handUp.png"
+        />
+        <img
+          id="can1-5a"
+          style="
+            position: absolute;
+            cursor: pointer;
+            left: 326px;
+            top: 255px;
+            visibility: hidden;
+          "
+          alt="Minimount Topview"
+          src="images/handDown.png"
+        />
+        <span
+          id="v1"
+          class="setFont"
+          style="position: absolute; top: 95px; left: 300px; opacity: 0"
+          >Minimount Top View</span
+        >
+      </div>
 
-<div class="simsubscreen" id="canvas0">
-<h4 class="incanvas">Objective:</h4>
-<p class="incanvas" style="font-size:14px;">To calculate the LAI of the vegetation using leaf area index meter.</p><br/>
-<h4 class="incanvas">Apparatus used:</h4>
-<p class="incanvas" style="font-size:14px;">Tripod, smart phone and Mini Mount with 360&deg; camera with 10MP Pictures, Rechargeable Li-ion Battery and wifi connectivity.</p>
-	<img style="position:absolute; left:50px; top:250px;cursor:pointer" title="" src="./images/table.png" />
-	<img style="position:absolute; left:120px; top:240px;cursor:pointer" title="Minimount" src="./images/mountHand.png" />
-	<img style="position:absolute; left:310px; top:280px;cursor:pointer" title="Smart Phone" src="./images/mobile.png" />
-	<img style="position:absolute; left:400px; top:200px;cursor:pointer" title="Tripod" src="./images/tripod1.png" />
-	<img style="position:absolute; left:540px; top:120px;width: 150px;height: 400px;cursor:pointer" title="" src="./images/man.png" />
-<br>&nbsp;<span class="tooltip" style="border-bottom:1px dotted ; color:red;text-align:justify">Description
-	<span class="tooltiptext">
-	<p><strong style="color:red;">Leaf area index (LAI)</strong>: is a dimensionless quantity that characterizes plant canopies. A leaf area index (LAI) expresses the leaf area per unit ground or trunk surface area of a plant and is commonly used as an indicator of the growth rate of a plant. LAI is a complex variable that relates not only to the size of the canopy, but also to its density, and the angle at which leaves are oriented in relation to one another and to light sources.
-	</p>
-	</span>
-	</span>
-</div>
+      <div class="simsubscreen" id="canvas2" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;2&nbsp;</span>
+        <p class="steptext">
+          &nbsp;The weight is placed on the tubular arm to level the mount.
+          Tighten the screws.
+        </p>
+        <img
+          id="can2-1"
+          style="position: absolute; left: 310px; top: 280px; cursor: pointer"
+          src="images/tripod2.png"
+        />
+        <img
+          id="can2-2"
+          style="position: absolute; left: 280px; top: 219px; cursor: pointer"
+          src="images/mountHand.png"
+        />
+        <img
+          id="can2-3"
+          style="position: absolute; left: 420px; top: 430px; cursor: pointer"
+          title="Weight"
+          src="images/box.png"
+        />
+        <img
+          id="can2-3a"
+          style="
+            position: absolute;
+            left: 420px;
+            top: 430px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/handbox.png"
+        />
+        <img
+          id="can2-4"
+          style="
+            position: absolute;
+            left: 333px;
+            top: 254px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/box.png"
+        />
+        <img
+          id="can2-5"
+          style="
+            position: absolute;
+            left: 293px;
+            top: 268px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/skrewTight.png"
+        />
+        <img
+          id="can2-5a"
+          style="
+            position: absolute;
+            left: 330px;
+            top: 268px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/skrewTight2.png"
+        />
+        <img
+          id="can2-6"
+          style="
+            position: absolute;
+            left: 450px;
+            top: 250px;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity;
+            transition-delay: 1s;
+          "
+          alt="Minimount Topview"
+          src="images/topview.png"
+        />
+        <img
+          id="can2-7"
+          style="
+            position: absolute;
+            cursor: pointer;
+            left: 580px;
+            top: 306px;
+            opacity: 0;
+            transition: opacity;
+            transition-delay: 1s;
+          "
+          alt="Minimount Topview"
+          src="images/bubble.png"
+        />
+        <img
+          id="can2-8"
+          style="
+            position: absolute;
+            cursor: pointer;
+            left: 440px;
+            top: 210px;
+            opacity: 0;
+            transition: opacity;
+            transition-delay: 1s;
+          "
+          alt="Minimount Topview"
+          src="images/zoom.png"
+        />
+        <p
+          id="v22"
+          class="setFont descStyle"
+          style="position: absolute; left: 90px; top: 100px; visibility: hidden"
+        >
+          Mount Level is indicated by a spirit green bubble.
+        </p>
+        <span
+          id="v21"
+          class="setFont"
+          style="position: absolute; top: 195px; left: 480px; opacity: 0"
+          >Minimount Top View</span
+        >
+      </div>
+      <div class="simsubscreen" id="canvas3" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;3&nbsp;</span>
+        <p class="steptext">
+          &nbsp;Before acquiring images pull of the flexible black rubber lens
+          cap. Press the mode button to turn on the camera. Connect the camera
+          to smartphone via wifi
+        </p>
+        <img
+          id="can3-1"
+          style="position: absolute; left: 310px; top: 280px; cursor: pointer"
+          src="images/tripod2.png"
+        />
+        <img
+          id="can3-2"
+          style="position: absolute; left: 280px; top: 219px; cursor: pointer"
+          src="images/miniWithoutCap.png"
+        />
+        <img
+          id="can3-3"
+          style="position: absolute; left: 334px; top: 222px; cursor: pointer"
+          src="images/cap0.png"
+        />
+        <img
+          id="can3-3b"
+          style="
+            position: absolute;
+            left: 334px;
+            top: 222px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/cap2.png"
+        />
+        <img
+          id="can3-3a"
+          style="
+            position: absolute;
+            left: 330px;
+            top: 216px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/cap1.png"
+        />
+        <img
+          id="can3-5"
+          style="
+            position: absolute;
+            left: 389px;
+            top: 192px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/zoom2.png"
+        />
+        <img
+          id="can3-4"
+          style="
+            position: absolute;
+            left: 400px;
+            top: 235px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/modeAll.png"
+        />
+        <img
+          id="can3-4u"
+          style="
+            position: absolute;
+            left: 414px;
+            top: 240px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/modeUp.png"
+        />
+        <img
+          id="can3-4d"
+          style="
+            position: absolute;
+            left: 414px;
+            top: 255px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/modeDown.png"
+        />
+        <img
+          id="can3-6"
+          style="
+            position: absolute;
+            left: 414px;
+            top: 356px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/smartPhone.png"
+        />
+        <span
+          id="can3-70"
+          style="
+            position: absolute;
+            left: 429px;
+            top: 366px;
+            cursor: pointer;
+            font-size: 5px;
+            visibility: hidden;
+          "
+          >Connected</span
+        >
+        <img
+          id="can3-71"
+          style="
+            position: absolute;
+            left: 435px;
+            top: 366px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/b1.png"
+        />
+        <img
+          id="can3-72"
+          style="
+            position: absolute;
+            left: 432px;
+            top: 364px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/b2.png"
+        />
+        <img
+          id="can3-73"
+          style="
+            position: absolute;
+            left: 427px;
+            top: 360px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/b3.png"
+        />
+        <p
+          id="v3"
+          class="setFont descStyle"
+          style="position: absolute; left: 90px; top: 440px; visibility: hidden"
+        >
+          Smartphone can be used to remotely trigger the camera while capturing
+          images.
+        </p>
+        <span
+          id="v31"
+          class="setFont"
+          style="
+            position: absolute;
+            top: 165px;
+            left: 370px;
+            visibility: hidden;
+          "
+          >Minimount Mode Button Panel</span
+        >
+      </div>
 
-<div class="simsubscreen" id="canvas1" style="visibility:hidden; ">
-	<strong class="incanvas">STEP</strong>
-	<span class="circlebg">&nbsp;1&nbsp;</span>
-	<p class="steptext">&nbsp;Mount the minimount on a monopod, tripod or a handle. To unlock the minimount push the lever down from upward to downward position.</p>
-	<img id="can1-1" style="position:absolute; left:240px; top: 280px;cursor:pointer" src="images/tripod2.png" />
-	<img id="can1-2" style="position:absolute; left:350px; top:350px;cursor:pointer" src="images/mountHand.png" />
-	<img id="can1-2a" style="position:absolute; left:350px; top:350px;cursor:pointer;visibility: hidden;" src="images/mountWithHand.png" />
-	<img id="can1-2b" style="position:absolute; left:210px; top:219px;cursor:pointer;visibility: hidden;" src="images/mountHand.png" />
-	<img id="can1-3" style="position:absolute; cursor:pointer;opacity: 0;" alt="Minimount Topview" src="images/topview.png" />
-	<img id="can1-6" style="position:absolute; cursor:pointer;left:408px; top:206px;visibility: hidden" alt="Minimount Topview" src="images/bubble.png" />
-	<img id="can1-7" style="position:absolute; cursor:pointer;left:265px; top:110px;visibility: hidden" alt="Minimount Topview" src="images/zoom.png" />
-	<img id="can1-4" style="position:absolute; cursor:pointer;left:330px; top:275px;opacity: 0;transform: rotate(-60deg); transform-origin: 20% 50%;" alt="Minimount Topview" src="images/lever2.png" />
-	<img id="can1-5" style="position:absolute; cursor:pointer;left:330px; top:208px;visibility: hidden" alt="Minimount Topview" src="images/handUp.png" />
-	<img id="can1-5a" style="position:absolute; cursor:pointer;left:326px; top:255px;visibility: hidden;" alt="Minimount Topview" src="images/handDown.png" />
-	<span id="v1" class="setFont" style="position:absolute;top: 95px; left: 300px; opacity: 0;">Minimount Top View</span>
-</div>
+      <div class="simsubscreen" id="canvas4" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;4&nbsp;</span>
+        <p class="steptext">
+          &nbsp;Place the setup under a vegetation and capture the image by
+          remotely triggering the camera using a smartphone.
+        </p>
+        <img
+          id="can4-1"
+          style="position: absolute; left: 20px; top: 50px; cursor: pointer"
+          src="images/tree.png"
+        />
+        <img
+          id="can4-2"
+          style="position: absolute; left: 180px; top: 240px; cursor: pointer"
+          src="images/manMount.png	"
+        />
+        <img
+          id="can4-3"
+          style="position: absolute; left: 500px; top: 380px; cursor: pointer"
+          src="images/smartPhone.png"
+        />
+        <img
+          id="can4-3a"
+          style="
+            position: absolute;
+            left: 500px;
+            top: 380px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/pressHand.png"
+        />
+        <img
+          id="can4-4"
+          style="
+            position: absolute;
+            left: 514px;
+            top: 390px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/pic.png"
+        />
+        <img
+          id="can4-5"
+          style="
+            position: absolute;
+            left: 400px;
+            top: 120px;
+            cursor: pointer;
+            visibility: hidden;
+          "
+          src="images/picture.png"
+        />
+        <p
+          id="v4"
+          class="setFont descStyle"
+          style="position: absolute; left: 370px; top: 455px; width: 350px"
+        >
+          The smart phone should be within 20m distance.
+        </p>
+      </div>
 
-<div class="simsubscreen" id="canvas2" style="visibility:hidden;">
-	<strong class="incanvas">STEP</strong>
-	<span class="circlebg">&nbsp;2&nbsp;</span>
-	<p class="steptext">&nbsp;The weight is placed on the tubular arm to level the mount. Tighten the screws.</p>
-	<img id="can2-1" style="position:absolute; left:310px; top:280px; cursor:pointer" src="images/tripod2.png" />
-	<img id="can2-2" style="position:absolute; left:280px; top:219px;cursor:pointer" src="images/mountHand.png" />
-	<img id="can2-3" style="position:absolute; left:420px; top:430px;cursor:pointer" title="Weight" src="images/box.png" />
-	<img id="can2-3a" style="position:absolute; left:420px; top:430px;cursor:pointer;visibility: hidden" src="images/handbox.png" />
-	<img id="can2-4" style="position:absolute; left:333px; top:254px;cursor:pointer;visibility: hidden" src="images/box.png" />
-	<img id="can2-5" style="position:absolute; left:293px; top:268px;cursor:pointer;visibility: hidden" src="images/skrewTight.png" />
-	<img id="can2-5a" style="position:absolute; left:330px; top:268px;cursor:pointer;visibility: hidden" src="images/skrewTight2.png" />
-	<img id="can2-6" style="position:absolute;	left:450px; top:250px; cursor:pointer;opacity: 0;transition: opacity;transition-delay: 1s;" alt="Minimount Topview" src="images/topview.png" />
-	<img id="can2-7" style="position:absolute; cursor:pointer;left:580px; top:306px;opacity: 0;transition: opacity;transition-delay: 1s;" alt="Minimount Topview" src="images/bubble.png" />
-	<img id="can2-8" style="position:absolute; cursor:pointer;left:440px; top:210px;opacity: 0;transition: opacity;transition-delay: 1s;" alt="Minimount Topview" src="images/zoom.png" />
-	<p id="v22" class="setFont descStyle" style="position: absolute; left: 90px;top: 100px;visibility: hidden">Mount Level is indicated by a spirit green bubble.</p>
-	<span id="v21" class="setFont" style="position:absolute;top: 195px; left: 480px; opacity: 0;">Minimount Top View</span>
-</div>
-<div class="simsubscreen" id="canvas3" style="visibility:hidden;">
-	<strong class="incanvas">STEP</strong>
-	<span class="circlebg">&nbsp;3&nbsp;</span>
-	<p class="steptext">&nbsp;Before acquiring images pull of the flexible black rubber lens cap. Press the mode button to turn on the camera. Connect the camera to smartphone via wifi
-	</p>
-	<img id="can3-1" style="position:absolute; left:310px; top:280px; cursor:pointer" src="images/tripod2.png" />
-	<img id="can3-2" style="position:absolute; left:280px; top:219px;cursor:pointer" src="images/miniWithoutCap.png" />
-	<img id="can3-3" style="position:absolute; left:334px; top:222px;cursor:pointer" src="images/cap0.png" />
-	<img id="can3-3b" style="position:absolute; left:334px; top:222px;cursor:pointer;visibility: hidden" src="images/cap2.png" />
-	<img id="can3-3a" style="position:absolute; left:330px; top:216px;cursor:pointer;visibility: hidden" src="images/cap1.png" />
-	<img id="can3-5" style="position:absolute; left:389px; top:192px;cursor:pointer;visibility: hidden" src="images/zoom2.png" />
-	<img id="can3-4" style="position:absolute; left:400px; top:235px;cursor:pointer;visibility: hidden" src="images/modeAll.png" />
-	<img id="can3-4u" style="position:absolute; left:414px; top:240px;cursor:pointer;visibility: hidden" src="images/modeUp.png" />
-	<img id="can3-4d" style="position:absolute; left:414px; top:255px;cursor:pointer;visibility: hidden" src="images/modeDown.png" />
-	<img id="can3-6" style="position:absolute; left:414px; top:356px;cursor:pointer;visibility: hidden" src="images/smartPhone.png" />
-	<span id="can3-70" style="position:absolute; left:429px; top:366px;cursor:pointer;font-size:5px;visibility: hidden;">Connected</span>
-	<img id="can3-71" style="position:absolute; left:435px; top:366px;cursor:pointer;visibility: hidden" src="images/b1.png" />
-	<img id="can3-72" style="position:absolute; left:432px; top:364px;cursor:pointer;visibility: hidden" src="images/b2.png" />
-	<img id="can3-73" style="position:absolute; left:427px; top:360px;cursor:pointer;visibility: hidden" src="images/b3.png" />
-	<p id="v3" class="setFont descStyle" style="position: absolute; left: 90px;top: 440px;visibility: hidden;">Smartphone can be used to remotely trigger the camera while capturing images.</p>
-	<span id="v31" class="setFont" style="position:absolute;top: 165px; left: 370px; visibility: hidden">Minimount Mode Button Panel</span>
-</div>
+      <div class="simsubscreen" id="canvas5" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;5&nbsp;</span>
+        <p class="steptext">
+          &nbsp;Select the image sample and The image captured is analysed and
+          vegetative parameters are calculated.
+        </p>
+        <div id="mySlider"></div>
+        <div id="sliderNav">
+          <div id="sliderPrev" onclick="prevSlide();">
+            <img src="images/back.png" />
+          </div>
+          <div id="sliderNext" onclick="nextSlide();">
+            <img src="images/forward.png" />
+          </div>
+        </div>
+        <p
+          class="setFont"
+          style="
+            position: absolute;
+            left: 340px;
+            top: 370px;
+            text-align: center;
+          "
+          id="name"
+        ></p>
+        <span
+          class="tooltip"
+          style="
+            position: absolute;
+            top: 390px;
+            left: 0px;
+            border-bottom: 1px dotted;
+            color: red;
+            text-align: justify;
+          "
+          >Inference
+          <span class="tooltiptext" style="background-color: rgb(15, 14, 14)">
+            <p>
+              <strong style="color: red">Leaf area index (LAI)</strong>: is 0
+              for Bare Ground and over 10 for dense conifer forests
+            </p>
+          </span>
+        </span>
+        <table
+          style="position: absolute; left: 0px; top: 410px; font-size: 12px"
+        >
+          <thead>
+            <tr>
+              <th>
+                Latitude
+                <p>[<0=S]</p>
+              </th>
+              <th>
+                Longitude
+                <p>[<0=W]</p>
+              </th>
+              <th>GapFraction</th>
+              <th>Openness</th>
+              <th>LAI(2000)-Lin</th>
+              <th>LAI(2000G)-Lin</th>
+              <th>LAI(2000)-Log</th>
+              <th>LAI(2000G)-Log</th>
+            </tr>
+          </thead>
+          <tbody id="data"></tbody>
+        </table>
+      </div>
 
-<div class="simsubscreen" id="canvas4" style="visibility:hidden;">
-	<strong class="incanvas">STEP</strong>
-	<span class="circlebg">&nbsp;4&nbsp;</span>
-	<p class="steptext">&nbsp;Place the setup under a vegetation and capture the image by remotely triggering the camera using a smartphone.</p>
-	<img id="can4-1" style="position:absolute; left:20px; top: 50px;cursor:pointer" src="images/tree.png" />
-	<img id="can4-2" style="position:absolute; left:180px; top: 240px;cursor:pointer" src="images/manMount.png	" />
-	<img id="can4-3" style="position:absolute; left:500px; top: 380px;cursor:pointer" src="images/smartPhone.png" />
-	<img id="can4-3a" style="position:absolute; left:500px; top: 380px;cursor:pointer;visibility:hidden" src="images/pressHand.png" />
-	<img id="can4-4" style="position:absolute; left:514px; top: 390px;cursor:pointer;visibility:hidden" src="images/pic.png" />
-	<img id="can4-5" style="position:absolute; left:400px; top: 120px;cursor:pointer;visibility: hidden;" src="images/picture.png" />
-	<p id="v4" class="setFont descStyle" style="position: absolute; left: 370px;top: 455px;width:350px	">The smart phone should be within 20m distance.</p>
-</div>
+      <!-- nextButton -->
+      <div id="nav">
+        <img id="nextButton" onclick="navNext()" src="images/Next.png" />
+      </div>
 
-<div class="simsubscreen" id="canvas5" style="visibility:hidden;">
-	<strong class="incanvas">STEP</strong>
-	<span class="circlebg">&nbsp;5&nbsp;</span>
-	<p class="steptext">&nbsp;Select the image sample and The image captured is analysed and  vegetative parameters are calculated.</p>
-	<div id="mySlider"></div>
-	<div id="sliderNav">
-		<div id="sliderPrev" onclick="prevSlide();"><img src="images/back.png"></div>
-		<div id="sliderNext" onclick="nextSlide();"><img src="images/forward.png"></div>
-	</div>
-	<p class="setFont" style="position:absolute;left: 340px;top:370px;text-align: center;" id="name"></p>
-	<span class="tooltip" style="position: absolute; top:390px; left: 0px;border-bottom:1px dotted ; color:red;text-align:justify;">Inference
-		<span class="tooltiptext" style="background-color:  rgb(15, 14, 14);">
-		<p><strong style="color:red;">Leaf area index (LAI)</strong>: is 0 for Bare Ground and over 10 for dense conifer forests
-		</p>
-		</span>
-		</span>
-	<table style="position:absolute;left: 0px;top:410px;font-size: 12px;
-	">
-		<thead>
-			<tr>
-				<th>Latitude<p>[<0=S]</p></th>
-				<th>Longitude<p>[<0=W]</p></th>
-				<th>GapFraction</th>
-				<th>Openness</th>
-				<th>LAI(2000)-Lin</th>
-				<th>LAI(2000G)-Lin</th>
-				<th>LAI(2000)-Log</th>
-				<th>LAI(2000G)-Log</th>
-			</tr>
-		</thead>
-		<tbody id="data">
+      <span
+        id="dialog-div"
+        style="text-align: justify; padding: 2px; border-radius: 5px"
+      >
+        <p
+          id="divp"
+          style="font-family: verdana; font-size: 14px; padding: 5px"
+        >
+          Both ends of the pipe must be trimmed to ensure parallel faces.
+        </p>
+        <input
+          type="button"
+          style="
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 auto;
+            padding: 0;
+            display: inline-block;
+            text-align: center;
+          "
+          value="OK"
+          onclick="hideDialog();"
+        />
+      </span>
 
-		</tbody>
-	</table>
-</div>
-
-
-<!-- nextButton -->
-<div id="nav">
-<img id="nextButton" onclick="navNext()" src="images/Next.png" />
-</div>
-
-<span id="dialog-div" style="text-align:justify;padding: 2px;border-radius: 5px;">
-	 <p id="divp" style="font-family:verdana; font-size:14px;padding: 5px;">Both ends of the pipe must be trimmed to ensure parallel faces.</p>
-	 <input type="button" style="cursor:pointer;border-radius: 5px;margin: 0 auto; padding: 0;display: inline-block;text-align: center;" value="OK" onclick = "hideDialog();">
-</span>
-
-
- <!-- This is the questions division -->
-<span id="question-div">
-	 <p id="divq" style="font-family:verdana; font-size:14px;">Both ends of the pipe must be trimmed to ensure parallel faces.</p>
-	 <!-- <input type="button" style="cursor:pointer" value="OK" onclick = "evaluateAnswer();"> -->
-	 <p id="ans"></p>
-</span>
-<!--Blinking Arrow	-->
-<img class ="" id="arrow1" style="visibility:hidden;" src="images/arrow1.png"/>
-<div id="copyright"> &copy; 2018 - <script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
-</div>
-</body>
+      <!-- This is the questions division -->
+      <span id="question-div">
+        <p id="divq" style="font-family: verdana; font-size: 14px">
+          Both ends of the pipe must be trimmed to ensure parallel faces.
+        </p>
+        <!-- <input type="button" style="cursor:pointer" value="OK" onclick = "evaluateAnswer();"> -->
+        <p id="ans"></p>
+      </span>
+      <!--Blinking Arrow	-->
+      <img
+        class=""
+        id="arrow1"
+        style="visibility: hidden"
+        src="images/arrow1.png"
+      />
+      <div id="copyright">
+        &copy; 2018 -
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources
+        & Ocean Engineering
+      </div>
+    </div>
+  </body>
 </html>

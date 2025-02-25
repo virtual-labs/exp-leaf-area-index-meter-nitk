@@ -1,1 +1,1 @@
-## Leaf Area Index
+## LAI using leaf area index meter
